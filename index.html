@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/">
+
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>reactEmbed Example</title>
+    <script src="/builds/oceanWiseUGC.min.js" type="text/javascript"></script>
+    <script>
+      window.onload = function initialise(){
+        const globalStyle = `
+          background-color: red !important;
+        `;
+        const lgMax = `
+          background-color: green !important;
+        `;
+        const xsMax = `
+          background-color: pink !important;
+        `;
+        OceanWiseUGC('beplasticwise', document.getElementById("OceanWiseUGC"), globalStyle, lgMax, xsMax);
+      }
+    </script>
+  </head>
+
+
+  <body>
+    <h1>Embedded ReactJS UGC Component</h1>
+    <div style="max-width: 600px" id="OceanWiseUGC" />
+  </body>
+</html>
